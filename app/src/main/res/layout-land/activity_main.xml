@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/androidimg"
+            android:scaleType="fitXY"
+            android:id="@+id/fimg"
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="(650) 555 1234"
+        android:id="@+id/firstphone"
+        android:textSize="17dp"
+        app:layout_constraintTop_toBottomOf="@id/fimg"
+        android:textColor="#000"
+        app:layout_constraintLeft_toRightOf="@id/phoneimg1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Google Phone"
+        android:id="@+id/firstphonelb"
+        app:layout_constraintTop_toBottomOf="@id/firstphone"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintLeft_toLeftOf="@id/firstphone"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/phoneimg1"
+        app:layout_constraintTop_toBottomOf="@+id/fimg"        android:scaleType="centerCrop"
+        android:src="@drawable/phone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/smsimg1"
+        app:layout_constraintTop_toBottomOf="@+id/fimg"
+        android:scaleType="centerInside"
+        android:src="@drawable/sms"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="(650) 555 1234"
+        android:id="@+id/secondphone"
+        android:textSize="17dp"
+        app:layout_constraintTop_toBottomOf="@id/firstphone"
+        android:textColor="#000"
+        app:layout_constraintLeft_toRightOf="@id/phoneimg1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Google Phone"
+        android:id="@+id/secondphonelb"
+        app:layout_constraintTop_toBottomOf="@id/secondphone"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintLeft_toLeftOf="@id/firstphone"
+        />
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/smsimg2"
+        app:layout_constraintTop_toBottomOf="@+id/smsimg1"
+        android:scaleType="centerInside"
+        android:src="@drawable/sms"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TableRow
+        android:id="@+id/hr"
+        android:layout_width="300dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/secondphonelb"
+        android:layout_height="2dp"
+        android:layout_marginRight="20dp"
+        android:background="#444"
+        android:layout_marginTop="30dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="MyEmail@gmail.com"
+        android:id="@+id/email"
+        android:textSize="17dp"
+        app:layout_constraintTop_toBottomOf="@id/hr"
+        android:textColor="#000"
+        app:layout_constraintLeft_toRightOf="@id/emailicon"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Google Mail"
+        android:id="@+id/emaillabel"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        app:layout_constraintLeft_toLeftOf="@id/email"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/emailicon"
+        app:layout_constraintTop_toBottomOf="@+id/hr"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gmail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/btn_star"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="270dp"
+        android:layout_marginRight="15dp"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
+    </ScrollView>

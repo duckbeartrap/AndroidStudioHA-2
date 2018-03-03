@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.william.myapplication.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/androidimg"
+        android:scaleType="centerCrop"
+        android:id="@+id/fimg"
+
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="(650) 555 1234"
+        android:id="@+id/firstphone"
+        android:textSize="17dp"
+        android:layout_below="@id/fimg"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/phoneimg1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Google Phone"
+        android:id="@+id/firstphonelb"
+        android:layout_below="@id/firstphone"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@id/firstphone"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/phoneimg1"
+        android:layout_below="@+id/fimg"
+        android:scaleType="centerCrop"
+        android:src="@drawable/phone"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/smsimg1"
+        android:layout_below="@+id/fimg"
+        android:scaleType="centerInside"
+        android:src="@drawable/sms"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="(650) 555 1234"
+        android:id="@+id/secondphone"
+        android:textSize="17dp"
+        android:layout_below="@id/firstphone"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/phoneimg1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Google Phone"
+        android:id="@+id/secondphonelb"
+        android:layout_below="@id/secondphone"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@id/firstphone"
+        />
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/smsimg2"
+        android:layout_below="@+id/smsimg1"
+        android:scaleType="centerInside"
+        android:src="@drawable/sms"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TableRow
+        android:id="@+id/hr"
+        android:layout_width="300dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/secondphonelb"
+        android:layout_height="2dp"
+        android:layout_marginRight="20dp"
+        android:background="#444"
+        android:layout_marginTop="30dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="(650) 555 1234"
+        android:id="@+id/email"
+        android:textSize="17dp"
+        android:layout_below="@id/hr"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/phoneimg1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Google Phone"
+        android:id="@+id/emaillabel"
+        android:layout_below="@id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@id/email"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/emailicon"
+        android:layout_below="@+id/hr"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gmail"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/btn_star"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="170dp"
+        android:layout_marginRight="15dp"
+
+        />
+
+
+</RelativeLayout>
